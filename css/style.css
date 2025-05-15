@@ -1,0 +1,1282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --color-primary: #57659e;
+    --color-primary-rgb: 87, 101, 158;
+    --color-accent-light: #f6deb8;
+    --color-cta: #ff5b60;
+    --color-text-dark: #443e46;
+    --color-secondary: #908ca4;
+    --color-tertiary: #c57284;
+    --color-text-light: #FFFFFF;
+
+    /* Opcional: Definir familias de fuentes */
+    --font-family-hero: "Roboto Slab", serif;
+    --font-family-heading: 'Montserrat', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+}
+
+
+/* --- Estilos Globales --- */
+body {
+    font-family: var(--font-family-body);
+    line-height: 1.6;
+    color: var(--color-text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: transparent !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+    background-color: rgba(var(--color-primary-rgb), 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-img {
+    max-height: 50px;
+}
+
+.navbar .nav-link {
+    color: var(--color-text-light);
+    /* Color de texto de los enlaces del navbar */
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--color-accent-light);
+}
+
+.navbar .btn-contact {
+    background-color: var(--color-tertiary);
+    color: var(--color-text-light);
+    padding: 12px 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-contact:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-text-dark);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(rgba(var(--color-primary-rgb), 0.75), rgba(var(--color-primary-rgb), 0.85)),
+        url('/img/hero.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    /* Espacio para el navbar fijo */
+    padding-bottom: 30px;
+    color: var(--color-text-light);
+}
+
+.hero-heading {
+    font-size: 5.2rem;
+    font-family: var(--font-family-hero);
+    font-weight: 900;
+    color: var(--color-accent-light);
+    line-height: 1.2;
+    text-shadow: 4px 3px 0 var(--color-text-dark);
+}
+
+.hero-subheading {
+    font-size: 1.8rem;
+    font-family: var(--font-family-hero);
+    font-weight: 700;
+    color: var(--color-accent-light);
+        text-shadow: 4px 3px 0 var(--color-text-dark);
+
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+    max-width: 550px;
+    
+}
+
+.btn-cta-hero {
+    background-color: var(--color-cta);
+    color: var(--color-text-light);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+}
+
+.btn-cta-hero:hover {
+    background-color: #e04a50;
+    color: var(--color-text-light);
+    transform: translateY(-2px);
+}
+
+.hero-decoration-img {
+    max-width: 350px;
+}
+
+
+
+
+
+/* --- About Section --- */
+.about-section {
+    background-color: var(--color-accent-light);
+    color: var(--color-text-dark); /* Color de texto por defecto para esta sección */
+}
+
+.about-image {
+    max-width: 100%;
+        border-radius: 10px; 
+}
+
+.about-content {
+    text-align: left; /* Por defecto */
+}
+
+.about-subtitle {
+    font-family: var(--font-family-heading); /* Usando Montserrat */
+    color: var(--color-primary);
+    font-size: 1.8rem; /* Ajusta según necesites */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.about-title-special {
+    font-family: var(--font-family-hero); /* Roboto Slab */
+    font-size: 4.5rem; /* Tamaño grande, ajusta */
+    font-weight: 700; /* Asegúrate que este peso esté disponible para Roboto Slab */
+    color: var(--color-text-light); /* Texto blanco */
+    text-shadow: 3px 3px 0 var(--color-primary); /* Sombra azul, ajusta x, y, blur (0) */
+    /* También puedes probar múltiples sombras para un efecto más grueso:
+       text-shadow:
+         3px 3px 0 var(--color-primary),
+        -1px -1px 0 var(--color-primary),
+         1px -1px 0 var(--color-primary),
+        -1px  1px 0 var(--color-primary),
+         1px  1px 0 var(--color-primary);
+    */
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* Como en la imagen del hero */
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.about-list li {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex; /* Para alinear icono y texto */
+    align-items: flex-start; /* Alinea al inicio del texto por si es multilinea */
+}
+
+.about-list li i { /* Estilo para los iconos de Bootstrap */
+    color: var(--color-primary); /* Color del icono */
+    font-size: 1.2em; /* Tamaño del icono un poco más grande que el texto */
+    /* margin-right: 0.5rem; ya lo da la clase me-2 */
+    line-height: 1.4; /* Para mejor alineación vertical con el texto */
+}
+
+
+/* ====== Mission, Vision, Values Section ===== */
+.mission-vision-section {
+
+}
+
+.mission-vision-left {
+    background-color: var(--color-primary);
+    color: var(--color-text-light); 
+}
+
+.mission-vision-right {
+    background-color: var(--color-secondary);
+    color: white; /* Texto de color secundario para los párrafos */
+}
+
+.mission-vision-heading {
+    font-family: var(--font-family-hero); /* Usando Roboto Slab como en el Hero */
+    font-size: 2.8rem; /* Ajusta el tamaño */
+    font-weight: 700; /* O 900 si prefieres */
+    line-height: 1.3;
+    margin-bottom: 1rem; /* Espacio debajo del texto */
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mission-vision-heading .highlight {
+    color: var(--color-accent-light); 
+}
+
+.mission-vision-right .mission-vision-subtitle {
+    font-family: var(--font-family-heading); 
+    color: var(--color-text-dark); /* Color oscuro para los subtítulos */
+    font-size: 2.1rem; /* Ajusta según necesites */
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.409);
+    text-transform: uppercase;
+}
+
+.mission-vision-right p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem; /* Espacio debajo de los párrafos */
+}
+
+.mission-vision-value-pill {
+    background-color: var(--color-primary); 
+    color: var(--color-text-light); /* Texto blanco */
+    padding: 8px 15px;
+    border-radius: 50px; /* Forma de pill */
+    margin: 10px; /* Espacio entre pills */
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block; /* Para que funcionen los márgenes y padding */
+}
+
+
+
+
+
+/* --- Team Section --- */
+.team-section {
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center content by default */
+    min-height: 80vh; /* Give it some height */
+    display: flex; /* Use flexbox for vertical centering of overall content */
+    align-items: center; /* Center content vertically */
+}
+
+/* Estilos para las columnas con fondos alternados */
+.team-col {
+    padding: 40px 20px; /* Adjust padding inside each column */
+    display: flex; /* Use flexbox for inner alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically by default */
+    min-height: 450px; /* Give columns a minimum height */
+}
+
+.team-col-primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-light); /* Texto blanco en columnas azules */
+}
+
+.team-col-light {
+    background-color: var(--color-accent-light);
+    color: var(--color-text-dark); /* Texto oscuro en columnas claras */
+}
+
+/* Estilo para el contenedor del miembro del equipo */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Space below team member info */
+}
+
+/* Alineación específica para los miembros en las columnas con texto vertical */
+.team-col-light .team-member-bottom {
+     /* En pantallas grandes, este div necesita ser empujado hacia abajo */
+     /* justify-content-around en la columna padre ayuda, pero podemos añadir margen */
+    margin-top: auto; /* Empuja hacia abajo cuando es flex item en columna */
+    margin-bottom: 20px; /* Espacio adicional abajo si es necesario */
+}
+
+
+/* Estilo para la imagen del miembro */
+.team-member-img {
+    width: 200px; /* Tamaño fijo para la imagen */
+    height: 200px;
+    object-fit: cover; 
+    border: 8px solid var(--color-tertiary); 
+    margin-bottom: 25px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+}
+
+/* Estilo para el contenedor del nombre y título */
+.team-member-info {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Estilo para el nombre */
+.team-member-name {
+    background-color: var(--color-secondary); 
+    color: var(--color-text-light); 
+    padding: 10px 20px;
+    border-radius: 50px; 
+    font-size: 1.4rem; 
+    font-weight: 700;
+    margin-bottom: 10px; 
+    display: inline-block; 
+}
+
+/* Estilo para el título/puesto */
+.team-member-title {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0; /* Remove default margin */
+    color: var(); /* Color oscuro para el título */
+}
+
+/* Estilo para el texto vertical "DREAM TEAM" */
+.team-vertical-text {
+    font-family: var(--font-family-hero); /* Usando Roboto Slab */
+    font-size: 6rem; /* Tamaño grande */
+    font-weight: 900; /* Peso negrita */
+    color: var(--color-text-dark); /* Color oscuro */
+    writing-mode: vertical-lr; /* Texto vertical, de izquierda a derecha */
+    text-orientation: upright; /* Letras orientadas normalmente */
+    letter-spacing: 5px; /* Espacio entre letras */
+    text-align: center; 
+    margin-bottom: auto; /* Empuja hacia arriba cuando es flex item en columna */
+}
+
+
+
+
+/* --- Services Section --- */
+.services-section {
+    background-color: var(--color-accent-light); /* Fondo claro */
+    color: var(--color-text-dark); /* Color de texto por defecto */
+}
+
+.section-title-services {
+    font-family: var(--font-family-heading); /* Usando Montserrat */
+    font-size: 3.5rem; /* Tamaño grande, ajusta */
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-title-services .title-part-blue {
+    color: var(--color-primary); /* Color azul/violáceo */
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+.section-title-services .title-part-dark {
+    color: var(--color-text-dark); /* Color oscuro */
+    text-shadow: 2px 2px 0 rgba(255,255,255,0.3); /* Sombra clara */
+}
+
+
+/* Estilo de las tarjetas de servicio */
+.service-card {
+    background-color: var(--color-tertiary); /* Fondo rosa/terciario */
+    color: var(--color-text-light); /* Texto blanco */
+    padding: 30px 25px; /* Padding dentro de la tarjeta */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 2px solid var(--color-text-dark); /* Borde oscuro como en la imagen */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
+    cursor: pointer; /* Indica que es interactuable */
+    height: 100%; /* Asegura que todas las tarjetas en la misma fila tengan la misma altura */
+    display: flex; /* Usar flexbox para centrar contenido */
+    flex-direction: column; /* Apilar contenido verticalmente */
+    justify-content: flex-start; /* Alinear contenido arriba por defecto */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+/* Efecto Hover */
+.service-card:hover {
+    transform: translateY(-10px); /* Levantar la tarjeta */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+}
+
+/* Estilo del icono */
+.service-icon {
+    font-size: 3.5rem; /* Tamaño del icono */
+    color: var(--color-text-light); /* Color del icono blanco */
+    margin-bottom: 15px; /* Espacio debajo del icono */
+}
+
+/* Estilo del título de la tarjeta */
+.service-title {
+    font-family: var(--font-family-heading); /* Usando Montserrat */
+    font-size: 1.6rem; /* Ajusta tamaño */
+    font-weight: 700;
+    color: var(--color-text-light); /* Texto blanco */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+/* Estilo de la descripción de la tarjeta */
+.service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-light); /* Texto blanco */
+    margin-bottom: 0; /* Elimina margen inferior por defecto */
+}
+
+
+
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    background-color: var(--color-primary); /* Fondo azul/violáceo primario */
+    color: var(--color-text-light); /* Texto blanco por defecto */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.testimonials-title {
+    font-family: var(--font-family-heading); /* Usando Montserrat */
+    font-size: 3rem; /* Ajusta tamaño */
+    font-weight: 900;
+    color: var(--color-text-light); /* Texto blanco */
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.2); /* Sombra */
+    margin-bottom: 4rem; /* Más espacio debajo del título */
+    text-align: center;
+}
+
+/* Estilo del contenedor de cada slide de testimonio */
+.testimonial-slide-content {
+    background-color: var(--color-text-light); /* Fondo gris violáceo */
+    color: var(--color-text-dark); /* Texto oscuro dentro de la tarjeta */
+    border-radius: 90px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 850px; /* Ancho máximo para la tarjeta de testimonio */
+    width: 100%; /* Asegura que use el ancho disponible hasta el max-width */
+}
+
+/* Estilo del wrapper del logo (fondo blanco) */
+.testimonial-logo-wrapper {
+    background-color: transparent; /* Fondo blanco */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    /* Opcional: añadir un borde si se quiere */
+    /* border: 1px solid rgba(0,0,0,0.1); */
+}
+
+/* Estilo de la imagen del logo */
+.testimonial-logo-img {
+    max-width: 150px; /* Controla el tamaño del logo */
+    height: auto;
+}
+
+
+/* Estilo de la cita de testimonio */
+.testimonial-quote {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 1.5rem; /* Espacio debajo de la cita */
+}
+
+/* Estilo del autor de la cita */
+.testimonial-author {
+    font-size: 1rem;
+    font-weight: 600; /* Seminegrita */
+    color: var(--color-cta); /* Color secundario o el que prefieras para el autor */
+    margin-bottom: 0;
+}
+
+/* Estilo de los controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ancho del área clickable */
+    /* Ajustar color y opacidad si no se ve bien con el fondo */
+    color: var(--color-text-light); /* Color de la flecha */
+    opacity: 0.8; /* Opacidad */
+    transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1; /* Opacidad al pasar el ratón */
+}
+
+/* Estilo específico para los iconos de la flecha (para asegurar color si es necesario) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+     /* El color por defecto es blanco. Si necesitas cambiarlo: */
+     /* background-image: url("data:image/svg+xml,..."); y cambia el color en el svg */
+     filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5)); /* Sombra a la flecha para que se vea mejor */
+}
+
+
+
+
+/* --- Contact Section --- */
+.contact-section {
+    background-color: var(--color-text-light);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative; /* Necesario para el overlay */
+    overflow: hidden; /* Para evitar que el contenido se salga */
+    padding-top: 80px; /* Ajusta el padding superior e inferior de la sección */
+    padding-bottom: 80px;
+
+}
+
+/* Overlay semi-transparente para mejorar la legibilidad del texto sobre la imagen */
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.85); /* Overlay blanco semi-transparente */
+    z-index: 1; /* Asegura que esté por encima de la imagen de fondo */
+}
+
+/* Asegura que el contenido dentro del container esté por encima del overlay */
+.contact-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo del cuadro que contiene el formulario y el contacto directo */
+.contact-content-box {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo casi blanco con un poco de transparencia */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Esconde bordes que sobresalgan si hay */
+        box-shadow: 0 5px 15px rgba(139, 17, 17, 0.612); /* Sombra sutil */
+
+}
+
+/* Línea divisoria vertical entre las columnas del formulario y contacto directo */
+/* Aplicamos el borde a la columna de la izquierda solo en pantallas medianas y grandes */
+.contact-form-col {
+     /* Default styles if needed */
+}
+
+.contact-direct-col {
+    /* Default styles if needed */
+}
+
+
+
+
+
+
+
+
+/* Fuerza a que todo el bloque de Mailchimp sea visible */
+
+#mc_embed_shell,
+#mc_embed_signup,
+#mc_embed_signup_scroll,
+#mc_embed_signup .mc-field-group{
+  display:block!important;
+  visibility:visible!important;
+  position:static!important;
+  left:auto!important;
+  width:100%!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  border:none!important;
+  background:none!important;
+}
+
+/* Inputs y textarea con ancho 100 % para Bootstrap */
+#mc_embed_signup input,
+#mc_embed_signup textarea{
+  width:100%;
+}
+
+/* Estilo de los grupos de campos de Mailchimp */
+.contact-form-col .mc-field-group {
+    display: block !important; /* Asegura que el contenedor de cada campo sea un bloque */
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important; /* Asegura ancho completo */
+    margin-bottom: 1.5rem !important; /* Espacio debajo de cada campo */
+    clear: both !important; /* Limpia flotados */
+    float: none !important; /* Anula flotados */
+}
+
+
+/* Estilo de las etiquetas del formulario (usando la clase form-label añadida en el HTML) */
+.contact-form-col .form-label {
+    display: block !important; /* Asegurar que sean elementos de bloque */
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-weight: 600 !important; /* Fuerza el peso de fuente */
+    color: var(--color-text-dark) !important; /* Fuerza el color */
+    margin-bottom: 8px !important; /* Espacio entre la etiqueta y el input */
+    /* Otros estilos de texto que quieras forzar */
+}
+
+/* Estilo del indicador de requerido de Mailchimp */
+.mc-field-group .asterisk {
+     color: var(--color-cta) !important; /* Color de acento (rosa/rojo) */
+     visibility: visible !important;
+     opacity: 1 !important;
+     display: inline !important; /* Opcional: asegurar que sea inline */
+}
+
+
+/* Estilo de los inputs y textarea del formulario (usando la clase form-control añadida) */
+.contact-form-col .mc-field-group input[type="email"],
+.contact-form-col .mc-field-group input[type="text"], /* Incluye First Name y potencialmente Phone si es texto */
+.contact-form-col .mc-field-group input[type="tel"], /* Incluye Phone si es tel */
+.contact-form-col .mc-field-group textarea /* Estilo para el campo de mensaje */
+ {
+    display: block !important; /* Fuerzamos a ser elementos de bloque para que ocupen todo el ancho */
+    visibility: visible !important;
+    opacity: 1 !important;
+    border: 2px solid var(--color-secondary) !important; /* Fuerza el borde */
+    border-radius: 8px !important; /* Fuerza bordes redondeados */
+    padding: 12px 15px !important; /* Fuerza padding */
+    font-size: 1rem !important; /* Fuerza tamaño de fuente */
+    color: var(--color-text-dark) !important; /* Fuerza color de texto */
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Fondo semi-transparente */
+    width: 100% !important; /* Fuerzamos ancho completo */
+    box-sizing: border-box !important; /* Asegura que padding y border se incluyan en el ancho */
+    height: auto !important; /* Anula altura fija si la hay */
+    line-height: 1.5 !important; /* Anula line-height si la hay */
+    float: none !important; /* Anula flotados */
+    clear: both !important; /* Limpia flotados */
+}
+
+/* Asegurar que el campo oculto de bot detection permanezca oculto */
+/* Mailchimp lo pone inline style, pero es bueno tener una regla CSS por si acaso */
+.contact-form-col .mc-field-group input[type="text"][tabindex="-1"] {
+    position: absolute !important;
+    left: -5000px !important;
+    display: block !important; /* Puede seguir siendo block pero fuera de pantalla */
+    visibility: hidden !important; /* Oculto */
+    opacity: 0 !important; /* Transparente */
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+}
+
+
+/* Estilo para los mensajes de respuesta de Mailchimp (si se muestran) */
+#mce-responses {
+    display: block !important; /* Asegura que el contenedor de respuestas pueda mostrarse */
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 1rem !important;
+    padding: 0.5rem !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    clear: both !important;
+}
+#mce-responses .response {
+     display: none !important; /* Estos DIVs están hidden por defecto, el JS de Mailchimp los muestra */
+     /* Cuando el JS de Mailchimp les añade display: block, nuestros estilos de color y borde se aplican */
+     padding: 0.75rem !important;
+     margin-bottom: 0.5rem !important;
+     border: 1px solid transparent !important;
+     border-radius: 0.25rem !important;
+}
+/* Styles for success/error response divs when Mailchimp JS makes them visible */
+#mce-error-response {
+     color: #721c24 !important;
+     background-color: #f8d7da !important;
+     border-color: #f5c6cb !important;
+}
+#mce-success-response {
+     color: #155724 !important;
+     background-color: #d4edda !important;
+     border-color: #c3e6cb !important;
+}
+
+
+/* Estilo del botón de submit de Mailchimp */
+/* Usamos el ID y la clase btn-cta-hero */
+.contact-form-col button[type="submit"]#mc-embedded-subscribe {
+     display: inline-block !important; /* O block, depende de cómo quieras que se alinee */
+     visibility: visible !important;
+     opacity: 1 !important;
+     /* Reutilizar y forzar los estilos de btn-cta-hero */
+    background-color: var(--color-cta) !important;
+    color: var(--color-text-light) !important;
+    padding: 12px 30px !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    border-radius: 14px !important;
+    text-transform: uppercase !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+    margin-top: 1rem !important; /* Espacio arriba (mt-3) */
+    border: none !important; /* Eliminar borde por defecto */
+    cursor: pointer !important; /* Cursor de puntero */
+    width: auto !important; /* Permitir que el ancho se ajuste al contenido */
+    /* Si quieres que el botón ocupe todo el ancho: width: 100% !important; display: block !important; */
+}
+
+/* Efecto hover para el botón */
+.contact-form-col button[type="submit"]#mc-embedded-subscribe:hover {
+     background-color: #e04a50 !important; /* Color oscuro al pasar el ratón */
+     color: var(--color-text-light) !important;
+     transform: translateY(-2px) !important;
+}
+
+
+/* Media Queries para ajustes responsivos - Asegúrate de que los selectores sigan funcionando */
+/* ... (mantén tus media queries existentes y ajusta selectores si es necesario,
+      pero las reglas con !important suelen prevalecer) ... */
+
+@media (max-width: 767.98px) {
+   /* ... (tus estilos responsivos existentes) ... */
+
+    /* Ajustes de tamaño de fuente y padding para elementos de Mailchimp en móvil */
+    .contact-form-col .form-label {
+         font-size: 0.9rem !important;
+    }
+    .contact-form-col .mc-field-group input[type="email"],
+    .contact-form-col .mc-field-group input[type="text"],
+    .contact-form-col .mc-field-group input[type="tel"],
+    .contact-form-col .mc-field-group textarea {
+        padding: 10px 12px !important;
+        font-size: 0.9rem !important;
+    }
+
+    .contact-form-col button[type="submit"]#mc-embedded-subscribe {
+         font-size: 1rem !important;
+         padding: 10px 25px !important;
+         margin-top: 0.8rem !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Clients Trust Section --- */
+.clients-trust-section {
+    background-color: var(--color-text-light); /* Fondo blanco */
+    overflow: hidden; /* Hide any potential overflow from animation */
+}
+
+.clients-trust-subtitle {
+    font-family: var(--font-family-body); /* Usando Open Sans */
+    font-size: 1.1rem;
+    font-style: italic; /* Texto en cursiva */
+    color: var(--color-text-dark);
+    margin-bottom: 8px; /* Espacio debajo del subtítulo */
+}
+
+.clients-trust-logo {
+    max-width: 150px; /* Ajusta el tamaño del logo principal */
+    height: auto;
+}
+
+/* Estilo de las líneas horizontales */
+.client-line {
+    border: none; /* Remove default hr border */
+    border-top: 2px solid var(--color-text-dark); /* Add a solid dark border */
+    width: 100%; /* Make the line fill its column */
+    margin-top: 1.5rem; /* Space above the line */
+    margin-bottom: 1.5rem; /* Space below the line */
+}
+
+
+/* --- Scrolling Logos Animation (Marquee) --- */
+.clients-logo-marquee-wrapper {
+    overflow: hidden; /* Hides the logos outside the visible area */
+    width: 100%; /* Takes the full width */
+    padding: 30px 0; /* Padding above and below the scrolling logos */
+}
+
+.clients-logo-marquee {
+    display: flex; /* Arrange logos in a row */
+    animation: scroll-logos 30s linear infinite; /* Animation: name duration timing-function iteration-count */
+    /* Initial state: start outside the right edge */
+    transform: translateX(0); /* Start at the original position */
+    /* Needs enough width to contain all duplicated logos in a single line */
+    width: max-content; /* Allow content to define width */
+}
+
+.client-logo {
+    height: 50px; /* Set a fixed height for the logos */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 40px; /* Space between logos */
+    filter: grayscale(100%); /* Make logos grayscale */
+    opacity: 0.7; /* Slightly transparent */
+    transition: all 0.3s ease; /* Optional: Add a transition for potential future hover effects */
+    flex-shrink: 0; /* Prevent logos from shrinking */
+}
+
+/* Optional: brighten logos on hover (maybe remove the animation on hover?) */
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+} 
+
+
+/* Define the scrolling animation */
+@keyframes scroll-logos {
+    from {
+        transform: translateX(0); /* Start from original position */
+    }
+    to {
+        transform: translateX(-50%); /* Assuming you have duplicated the logos once */
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) { /* Tablets and mobile */
+    .clients-trust-subtitle {
+        font-size: 1rem;
+    }
+    .clients-trust-logo {
+        max-width: 120px; /* Smaller logo */
+    }
+    .client-line {
+        /* Lines are hidden on mobile with d-none d-md-block */
+    }
+     .clients-logo-marquee-wrapper {
+         padding: 20px 0; /* Adjust padding */
+     }
+     .client-logo {
+         height: 40px; /* Smaller logos on mobile */
+         margin: 0 25px; /* Adjust space between logos */
+     }
+     /* You might need to adjust the animation duration or keyframes for mobile */
+     @keyframes scroll-logos {
+         from { transform: translateX(0); }
+         to { transform: translateX(-50%); /* Adjust if needed */ }
+     }
+      .clients-logo-marquee {
+         animation-duration: 20s; /* Faster scroll on mobile if needed */
+     }
+}
+
+@media (max-width: 575.98px) { /* Just mobile */
+     .clients-trust-logo {
+         max-width: 100px; /* Even smaller logo */
+     }
+     .client-logo {
+         height: 30px; /* Smallest logos */
+         margin: 0 15px; /* Minimum space */
+     }
+      .clients-logo-marquee {
+         animation-duration: 15s; /* Even faster scroll on mobile if needed */
+     }
+     /* Optional: Disable animation on very small screens */
+     /* .clients-logo-marquee {
+         animation: none !important;
+         flex-wrap: wrap;
+         justify-content: center;
+         width: 100%;
+         height: auto;
+     }
+     .client-logo {
+         margin: 10px;
+         filter: none;
+         opacity: 1;
+     } */
+}
+
+
+
+
+
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--color-primary); /* Fondo con color primario */
+    color: var(--color-text-light); /* Texto blanco */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-logo {
+    max-height: 100px; /* Ajusta el tamaño del logo si es necesario */
+}
+
+.footer-info,
+.footer-copyright {
+    margin-bottom: 6px; /* Espacio entre líneas de información */
+    text-align: center  ;
+}
+
+.footer-copyright {
+    margin-bottom: 0; /* Elimina el margen inferior del último párrafo */
+    opacity: 0.9; /* Ligeramente transparente como en la imagen */
+    font-size: 0.9rem; /* Tamaño un poco más pequeño */
+}
+
+.social-icon-link {
+    color: var(--color-text-light); /* Color de los iconos (blanco) */
+    font-size: 1.8rem; /* Tamaño de los iconos */
+    margin: 0 8px; /* Espacio horizontal entre iconos */
+    transition: color 0.3s ease; /* Transición para el hover */
+    display: inline-block; /* Necesario para que el margin funcione correctamente */
+}
+
+.social-icon-link:hover {
+    color: var(--color-accent-light); /* Color de acento al pasar el ratón */
+}
+
+
+/* Media Query para ajustar espaciado en pantallas pequeñas */
+@media (max-width: 991.98px) {
+    .footer-logo {
+         margin-bottom: 15px; /* Espacio debajo del logo cuando se apila */
+    }
+
+    .footer .col-12.text-center.text-lg-start.mb-3 {
+        /* Asegura que el margen mb-3 de bootstrap se aplique cuando se apila */
+        margin-bottom: var(--bs-gutter-y, 1rem); /* Usar variable de bootstrap gutter para consistencia */
+         margin-bottom: 15px; /* O un valor fijo */
+    }
+
+     .footer .col-12.text-center.text-lg-end {
+         /* Asegura que el margen mb-3 o mt-3 se aplique cuando se apila */
+         margin-top: var(--bs-gutter-y, 1rem); /* Usar variable de bootstrap gutter para consistencia */
+         margin-top: 15px; /* O un valor fijo */
+     }
+
+    .footer-info,
+    .footer-copyright {
+        margin-bottom: 5px; /* Ajustar espacio entre líneas en móvil */
+        font-size: 0.95rem;
+    }
+
+     .social-icon-link {
+         font-size: 1.6rem; /* Reducir tamaño de iconos en móvil */
+         margin: 0 6px;
+     }
+}
+
+
+
+
+
+/* Media Queries para ajustes responsivos */
+@media (max-width: 991.98px) { /* Pantallas LG y abajo */
+    .contact-form-title {
+         font-size: 2rem;
+    }
+     .contact-direct-title {
+         font-size: 1.6rem;
+     }
+     .contact-bottom-text {
+         font-size: 2.2rem;
+         margin-top: 3rem;
+     }
+}
+
+@media (max-width: 767.98px) { /* Pantallas MD y abajo (tablets) */
+     .contact-form-col,
+     .contact-direct-col {
+         padding: 30px !important; /* Reducir padding en móviles */
+     }
+     .contact-form-title {
+         font-size: 1.8rem;
+         margin-bottom: 2rem;
+     }
+     .contact-direct-title {
+         font-size: 1.4rem;
+     }
+     .contact-bottom-text {
+         font-size: 1.8rem;
+         margin-top: 2rem;
+     }
+}
+
+@media (max-width: 575.98px) { /* Pantallas SM y abajo (móviles) */
+      .contact-form-title {
+         font-size: 1.6rem;
+     }
+      .contact-direct-title {
+         font-size: 1.2rem;
+     }
+     .contact-bottom-text {
+         font-size: 1.4rem;
+     }
+      .contact-form-col,
+      .contact-direct-col {
+          padding: 25px !important; /* Reducir más padding */
+      }
+}
+
+
+
+
+/* Media Queries para ajustes responsivos */
+@media (max-width: 767.98px) { /* Tablets y móviles */
+    .testimonials-title {
+        font-size: 2.5rem; /* Reducir tamaño del título */
+        margin-bottom: 3rem;
+    }
+
+     .testimonial-slide-content {
+        padding: 30px; /* Reducir padding */
+     }
+
+    .testimonial-logo-img {
+        max-width: 120px; /* Reducir tamaño del logo en móvil */
+    }
+
+    .testimonial-quote {
+        font-size: 1rem; /* Reducir tamaño de la cita */
+    }
+
+    .testimonial-author {
+         font-size: 0.9rem; /* Reducir tamaño del autor */
+    }
+
+     .carousel-control-prev,
+     .carousel-control-next {
+         width: 10%; /* Aumentar área clickable en móvil */
+     }
+}
+
+@media (max-width: 575.98px) { /* Solo móviles */
+    .testimonials-title {
+        font-size: 2rem; /* Reducir más el tamaño del título */
+    }
+
+     .testimonial-slide-content {
+        padding: 25px; /* Reducir más padding */
+     }
+}
+
+
+
+
+
+
+
+/* Media Query para ajustes responsivos */
+@media (max-width: 767.98px) { /* Tablets y móviles */
+    .section-title-services {
+        font-size: 2.5rem; /* Reducir tamaño del título */
+        margin-bottom: 3rem; /* Ajustar margen */
+    }
+
+    .service-card {
+        padding: 25px 20px; /* Reducir padding en tarjetas */
+    }
+
+    .service-icon {
+        font-size: 3rem; /* Reducir tamaño del icono */
+        margin-bottom: 10px;
+    }
+
+    .service-title {
+        font-size: 1.4rem; /* Reducir tamaño del título de tarjeta */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575.98px) { /* Solo móviles */
+    .section-title-services {
+        font-size: 2rem; /* Reducir más el tamaño del título */
+    }
+}
+
+/* Media Query para pantallas grandes (>=992px) */
+@media (min-width: 992px) {
+    .team-col {
+        /* Custom width for 5 columns */
+        width: 20%; /* Cada columna ocupa el 20% del ancho */
+        flex: 0 0 20%; /* Evita que flexbox interfiera con el ancho */
+        max-width: 20%; /* Asegura que no sea más grande */
+        min-height: 700px; /* Aumentar altura en pantallas grandes para acomodar texto vertical */
+        padding: 40px 15px; /* Ajustar padding si 20% es muy estrecho */
+    }
+
+    .team-col-light.d-flex {
+         /* Ajustar justificación solo en pantallas grandes si es necesario */
+         justify-content: space-around; /* Distribuir espacio entre el texto vertical y el miembro */
+    }
+
+    .team-vertical-text {
+         margin-top: 40px; /* Espacio arriba del texto vertical */
+         margin-bottom: auto; /* Sigue empujando al miembro hacia abajo */
+         flex-grow: 1; /* Permite que el texto vertical ocupe el espacio disponible arriba */
+    }
+
+     .team-col-light .team-member-bottom {
+         margin-top: auto; /* Asegura que el miembro esté abajo */
+         margin-bottom: 40px; /* Espacio abajo del miembro */
+         flex-shrink: 0; /* Evita que el miembro se encoja si el texto es muy largo */
+     }
+}
+
+
+/* Ajustes responsivos para pantallas pequeñas y medianas */
+@media (max-width: 991.98px) {
+    .team-col {
+        min-height: auto; /* Remove min height to allow stacking */
+        padding: 30px 20px; /* Adjust padding */
+        justify-content: center; /* Center vertically when stacked */
+    }
+
+     .team-member-img {
+        width: 150px; /* Smaller image size on mobile */
+        height: 150px;
+        margin-bottom: 15px;
+     }
+
+     .team-member-name {
+        font-size: 1.2rem; /* Smaller font size on mobile */
+        padding: 8px 15px;
+        margin-bottom: 8px;
+     }
+
+     .team-member-title {
+         font-size: 0.9rem; /* Smaller font size on mobile */
+     }
+
+     /* Ensure member in light columns is centered when vertical text is hidden */
+     .team-col-light.d-flex {
+         flex-direction: column; /* Stack even if flex was row before */
+         justify-content: center; /* Center content vertically */
+     }
+
+     .team-col-light .team-member-bottom {
+         margin-top: 0; /* Remove auto margin when stacked */
+         margin-bottom: 0; /* Remove extra bottom margin */
+     }
+}
+
+
+
+
+
+
+
+
+/* Responsive Adjustments for Mission, Vision, Values Section */
+@media (max-width: 991.98px) {
+    .mission-vision-left,
+    .mission-vision-right {
+        text-align: center; /* Centrar contenido en pantallas pequeñas */
+        padding-left: 20px; /* Ajustar padding en móviles si es necesario */
+        padding-right: 20px;
+    }
+
+     .mission-vision-heading {
+         font-size: 2rem; /* Ajustar tamaño de fuente en móviles */
+     }
+
+    .mission-vision-right .mission-vision-subtitle {
+        font-size: 1.5rem; /* Ajustar tamaño de subtítulos en móviles */
+    }
+
+    .mission-vision-left .text-center.text-lg-start {
+        text-align: center !important; /* Asegura centrado del botón en móviles */
+    }
+
+     .mission-vision-value-pill {
+         margin: 4px; /* Ajustar espacio entre pills en móviles */
+     }
+}
+
+
+
+
+
+@media (max-width: 991.98px) {
+
+    .hero-section {
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero-content-left {
+        margin-bottom: 40px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar .btn-contact {
+        margin-top: 10px;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(var(--color-primary-rgb), 0.95);
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}

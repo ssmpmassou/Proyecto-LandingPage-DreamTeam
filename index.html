@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Team - Creative Solutions</title>
+    <!-- Bootstrap CSS (Usar SOLO el CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom CSS (Ruta corregida) -->
+    <link rel="stylesheet" href="css/style.css"> <!-- CAMBIADO: Eliminado el '/' inicial -->
+    <!-- Bootstrap Icons CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Mesa de trabajo 8.png" alt="Dream Team Logo" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-contact" href="#contact">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center gy-4 gy-lg-0">
+                <div class="col-12 col-lg-7 hero-content-left text-center text-lg-start">
+                    <h1 class="hero-heading">EL DREAM TEAM</h1>
+                    <p class="hero-subheading">que necesitas para tus proyectos creativos</p>
+                    <p class="hero-text">
+                        Con más de 10 años de trayectoria combinada en diseño gráfico,
+                        animación y comunicación social, somos el aliado perfecto para dar
+                        vida a tus ideas en el entorno digital.
+                    </p>
+                    <a href="#contact" class="btn btn-cta-hero">AGENDA UNA CITA</a>
+                </div>
+                <div class="col-12 col-lg-5 hero-content-right text-center text-lg-end">
+                    <img src="img/Mesa de trabajo 1 copia.png" alt="Decoración Luna Dream Team"
+                        class="img-fluid hero-decoration-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center gy-4 gy-lg-0">
+                <div class="col-lg-5 col-md-12 text-center">
+                    <img src="img/lentes.jfif" alt="Acerca de Dream Team" class="img-fluid about-image">
+                </div>
+                <div class="col-lg-7 col-md-12 about-content">
+                    <h3 class="about-subtitle">Acerca de</h3>
+                    <h2 class="about-title-special">DREAM TEAM</h2>
+                    <p>
+                        Unimos 10 años de experiencia en diseño gráfico, animación y comunicación social para
+                        convertir tus ideas en experiencias digitales impactantes. Nuestro equipo multidisciplinario
+                        trabaja de la mano, integrando creatividad, estrategia y tecnología, para fortalecer tu marca
+                        y conectar auténticamente con tu audiencia.
+                    </p>
+
+                    <h3 class="about-subtitle mt-4 mb-3">¿Por qué trabajar con nosotros?</h3>
+                    <ul class="list-unstyled about-list">
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Todo en uno: diseño, animación y comunicación
+                            social bajo un mismo techo.</li>
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Experiencia probada: Desde startups hasta
+                            grandes corporativos.</li>
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Proceso ágil: colaboración fluida, entregas
+                            puntuales y adaptación a tus necesidades.</li>
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Socios de confianza: transparencia total y
+                            compromiso con tu éxito.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin About Section -->
+
+    <section id="clients-trust" class="clients-trust-section py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4 align-items-center">
+                <div class="col-3 col-md-4">
+                    <hr class="client-line mx-auto d-none d-md-block"> <!-- Line left, hidden on mobile -->
+                </div>
+                <div class="col-6 col-md-4">
+                    <p class="clients-trust-subtitle">Marcas que confían en</p>
+                    <img src="img/negro.png" alt="Dream Team Logo Dark" class="img-fluid clients-trust-logo">
+                    <!-- Use your dark logo version if available -->
+                </div>
+                <div class="col-3 col-md-4">
+                    <hr class="client-line mx-auto d-none d-md-block"> <!-- Line right, hidden on mobile -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Marquee/Scrolling Logos -->
+        <div class="clients-logo-marquee-wrapper">
+            <div class="clients-logo-marquee">
+                <!-- Duplicate logos for seamless scrolling -->
+                <img src="img/Mesa de trabajo 1 copia 3.png" alt="Meta Logo" class="client-logo">
+                <!-- Use dark versions -->
+                <img src="img/google.png" alt="Google Logo" class="client-logo">
+                <img src="img/Mesa de trabajo 1 copia 2.png" alt="Microsoft Logo" class="client-logo">
+                <img src="img/Mesa de trabajo 1 copia 3.png" alt="Meta Logo" class="client-logo"> <!-- Duplicate -->
+                <img src="img/google.png" alt="Google Logo" class="client-logo"> <!-- Duplicate -->
+                <img src="img/Mesa de trabajo 1 copia 2.png" alt="Microsoft Logo" class="client-logo">
+                <!-- Duplicate -->
+                <img src="img/Mesa de trabajo 1 copia 3.png" alt="Meta Logo" class="client-logo">
+                <!-- Use dark versions -->
+                <img src="img/google.png" alt="Google Logo" class="client-logo">
+                <img src="img/Mesa de trabajo 1 copia 2.png" alt="Microsoft Logo" class="client-logo">
+                <img src="img/Mesa de trabajo 1 copia 3.png" alt="Meta Logo" class="client-logo"> <!-- Duplicate -->
+                <img src="img/google.png" alt="Google Logo" class="client-logo"> <!-- Duplicate -->
+                <img src="img/Mesa de trabajo 1 copia 2.png" alt="Microsoft Logo" class="client-logo">
+                <!-- Duplicate -->
+
+                <!-- Add more duplicates if needed for a longer loop -->
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Mission and Vision Section -->
+    <section id="mission-vision" class="mission-vision-section">
+        <div class="container-fluid"> <!-- Usamos container-fluid si queremos que las columnas lleguen a los bordes -->
+            <div class="row">
+
+                <!-- Left Column: Text and Button -->
+                <div
+                    class="col-12 col-lg-6 mission-vision-left py-5 px-4 px-lg-5 d-flex flex-column justify-content-center">
+                    <h2 class="mission-vision-heading text-center text-lg-start">
+                        Gestionamos <span class="highlight">diseño</span>,
+                        <span class="highlight">animación</span> y
+                        <span class="highlight">comunicación</span> en un solo equipo ágil, usando workshops y
+                        plataformas colaborativas para garantizar entregas puntuales y coherencia total en todos tus
+                        <span class="highlight">canales</span>.
+                    </h2>
+                    <div class="text-center text-lg-start mt-4">
+                        <a href="#contact" class="btn btn-cta-hero">Contáctanos</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Mission, Vision, Values -->
+                <div class="col-12 col-lg-6 mission-vision-right py-5 px-4 px-lg-5">
+                    <h3 class="mission-vision-subtitle">Misión</h3>
+                    <p>
+                        Unir diseño gráfico, animación y comunicación social en un solo equipo ágil y experto, para
+                        crear experiencias digitales coherentes que impulsen resultados medibles y generen conexión
+                        auténtica con la audiencia.
+                    </p>
+
+                    <h3 class="mission-vision-subtitle mt-4">Visión</h3>
+                    <p>
+                        Ser el referente global en soluciones creativas integrales, reconocidos por transformar ideas en
+                        narrativas digitales que inspiran, emocionan y construyen relaciones duraderas entre marcas y
+                        personas.
+                    </p>
+
+                    <h3 class="mission-vision-subtitle mt-4">Valores</h3>
+                    <div class="d-flex flex-wrap mt-3">
+                        <span class="mission-vision-value-pill">Colaboración</span>
+                        <span class="mission-vision-value-pill">Innovación</span>
+                        <span class="mission-vision-value-pill">Compromiso</span>
+                        <span class="mission-vision-value-pill">Calidad</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container-fluid g-0">
+            <!-- Usamos container-fluid y g-0 para que las columnas peguen a los bordes -->
+            <div class="row g-0"> <!-- g-0 elimina el gutter entre columnas -->
+
+                <!-- Column 1 (Blue) -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg team-col team-col-primary">
+                    <div class="team-member">
+                        <img src="img/valeria.jfif" alt="Foto de Valeria López"
+                            class="img-fluid team-member-img rounded-circle">
+                        <div class="team-member-info">
+                            <h4 class="team-member-name">Valeria López</h4>
+                            <p class="team-member-title">Comunicación Audiovisual <br> y Publicidad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 (Light) - DREAM -->
+                <div
+                    class="col-12 col-sm-6 col-md-4 col-lg team-col team-col-light d-flex flex-column justify-content-around align-items-center">
+                    <!-- Texto vertical (visible solo en pantallas grandes) -->
+                    <div class="team-vertical-text d-none d-lg-block">DREAM</div>
+                    <!-- Miembro del equipo (visible en todas las pantallas, alineado abajo en lg) -->
+                    <div class="team-member team-member-bottom">
+                        <img src="img/melanthony.jfif" alt="Foto de Melanthony Mejia"
+                            class="img-fluid team-member-img rounded-circle">
+                        <div class="team-member-info">
+                            <h4 class="team-member-name">Melanthony Mejia</h4>
+                            <p class="team-member-title">Diseño Gráfico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3 (Blue) - José Irias -->
+                <div
+                    class="col-12 col-sm-6 col-md-4 col-lg team-col team-col-primary d-flex align-items-center justify-content-center">
+                    <div class="team-member">
+                        <img src="img/jose.jfif" alt="Foto de José Irías"
+                            class="img-fluid team-member-img rounded-circle">
+                        <div class="team-member-info">
+                            <h4 class="team-member-name">José Irías</h4>
+                            <p class="team-member-title">Animación</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 4 (Light) - TEAM -->
+                <div
+                    class="col-12 col-sm-6 col-md-4 col-lg team-col team-col-light d-flex flex-column justify-content-around align-items-center">
+                    <!-- Texto vertical (visible solo en pantallas grandes) -->
+                    <div class="team-vertical-text d-none d-lg-block">TEAM</div>
+                    <!-- Miembro del equipo (visible en todas las pantallas, alineado abajo en lg) -->
+                    <div class="team-member team-member-bottom">
+                        <img src="img/scarleth.jpg" alt="Foto de Scarleth Massou"
+                            class="img-fluid team-member-img rounded-circle">
+                        <div class="team-member-info">
+                            <h4 class="team-member-name">Scarleth Massou</h4>
+                            <p class="team-member-title">Diseño Gráfico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 5 (Blue) - Ana Rodriguez -->
+                <div
+                    class="col-12 col-sm-6 col-md-4 col-lg team-col team-col-primary d-flex align-items-center justify-content-center">
+                    <div class="team-member">
+                        <img src="img/ana.jfif" alt="Foto de Ana Rodriguez"
+                            class="img-fluid team-member-img rounded-circle">
+                        <div class="team-member-info">
+                            <h4 class="team-member-name">Ana Rodriguez</h4>
+                            <p class="team-member-title">Animación</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title-services">
+                        <span class="title-part-blue">Nuestros</span> <span class="title-part-dark">Servicios</span>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Services Cards Row -->
+            <div class="row gy-4 justify-content-center"> <!-- gy-4 adds vertical spacing between columns -->
+
+                <!-- Service Card 1: Diseño gráfico -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-vector-pen service-icon"></i>
+                        <h3 class="service-title">Diseño gráfico</h3>
+                        <p class="service-description">
+                            Creamos identidades visuales, branding y piezas para web y print.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 2: Animación -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-play-circle service-icon"></i>
+                        <h3 class="service-title">Animación</h3>
+                        <p class="service-description">
+                            Desarrollamos contenidos animados que captan la atención y refuerzan tu mensaje.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 3: Comunicación -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-megaphone service-icon"></i>
+                        <h3 class="service-title">Comunicación</h3>
+                        <p class="service-description">
+                            Planificamos y producimos contenidos sociales y corporativos alineados a tus objetivos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Card 4: Estrategia -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <i class="bi bi-arrow-repeat service-icon"></i>
+                        <h3 class="service-title">Estrategia</h3>
+                        <p class="service-description">
+                            Coordinamos todo el flujo de trabajo con metodologías ágiles y herramientas colaborativas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Fin Services Section -->
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="testimonials-title">Lo que dicen nuestros clientes</h2>
+                </div>
+            </div>
+
+            <!-- Carousel for Testimonials -->
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Testimonial 1: Meta -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-slide-content p-4 p-md-5 mx-auto"> <!-- max-width, padding -->
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                                    <div class="testimonial-logo-wrapper p-3"> <!-- White background wrapper -->
+                                        <img src="img/Mesa de trabajo 1 copia 3.png" alt="Meta Logo"
+                                            class="img-fluid testimonial-logo-img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <p class="testimonial-quote">
+                                        "Contratar a Dream Team fue la mejor decisión: nos entregaron una identidad
+                                        visual impecable, animaciones que cautivan a nuestra audiencia y una
+                                        comunicación alineada con nuestros objetivos. El proceso fue ágil, transparente
+                                        y 100 % colaborativo."
+                                    </p>
+                                    <p class="testimonial-author">- Ana Gómez, Directora de Marketing en Meta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2: Microsoft -->
+                    <div class="carousel-item">
+                        <div class="testimonial-slide-content p-4 p-md-5 mx-auto">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                                    <div class="testimonial-logo-wrapper p-3">
+                                        <img src="img/Mesa de trabajo 1 copia 2.png" alt="Microsoft Logo"
+                                            class="img-fluid testimonial-logo-img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <p class="testimonial-quote">
+                                        "El equipo de Dream Team superó nuestras expectativas. Su enfoque integral
+                                        combinando diseño y comunicación nos ayudó a lanzar nuestra nueva campaña con un
+                                        impacto sin precedentes. La calidad y la rapidez en la entrega fueron
+                                        excepcionales."
+                                    </p>
+                                    <p class="testimonial-author">- Equipo de Marketing en Microsoft</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3: Google -->
+                    <div class="carousel-item">
+                        <div class="testimonial-slide-content p-4 p-md-5 mx-auto">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                                    <div class="testimonial-logo-wrapper p-3">
+                                        <img src="img/google.png" alt="Google Logo"
+                                            class="img-fluid testimonial-logo-img">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <p class="testimonial-quote">
+                                        "Dream Team es un socio estratégico invaluable. Su habilidad para integrar
+                                        animación compleja con una estrategia de comunicación clara hizo que nuestro
+                                        mensaje resonara fuertemente. Un placer trabajar con profesionales tan dedicados
+                                        y creativos."
+                                    </p>
+                                    <p class="testimonial-author">- Jefe de Proyecto en Google</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            <!-- End Carousel -->
+
+        </div>
+    </section>
+    <!-- Fin Testimonials Section -->
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container py-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-10"> <!-- Optional: Limit the max width of the inner content box -->
+                    <div class="contact-content-box">
+                        <div class="row g-0"> <!-- g-0 removes the gutter between columns -->
+
+                            <!-- Left Column: Form (Mailchimp Embed) -->
+                            <div class="col-12 col-md-6 contact-form-col p-4 p-md-5">
+                                <!-- Título que ya tenías, lo mantenemos -->
+                                <h2 class="contact-form-title text-center text-md-start mb-4 mb-md-5">
+                                    ¡Impulsa tu <span class="highlight">proyecto</span> hoy!
+                                </h2>
+
+                                <!-- BEGIN Mailchimp Embed Code -->
+                                <div id="mc_embed_shell">
+                                    <div id="mc_embed_signup">
+                                        <form
+                                            action="https://gmail.us15.list-manage.com/subscribe/post?u=52cbc18c38999aa2889c9dce2&amp;id=5488e895b1&amp;f_id=00eec2e1f0"
+                                            method="post" id="mc-embedded-subscribe-form"
+                                            name="mc-embedded-subscribe-form" class="validate" target="_blank"
+                                            novalidate>
+                                            <div id="mc_embed_signup_scroll">
+
+                                                <!-- Campo Email -->
+                                                <div class="mc-field-group">
+                                                    <label for="mce-EMAIL" class="form-label">Email Address <span
+                                                            class="asterisk">*</span></label>
+                                                    <!-- Añadimos form-label -->
+                                                    <input type="email" name="EMAIL" class="required email form-control"
+                                                        id="mce-EMAIL" required="" value="">
+                                                    <!-- Añadimos form-control -->
+                                                </div>
+
+                                                <!-- Campo First Name -->
+                                                <div class="mc-field-group">
+                                                    <label for="mce-FNAME" class="form-label">First Name </label>
+                                                    <!-- Añadimos form-label -->
+                                                    <input type="text" name="FNAME" class="text form-control"
+                                                        id="mce-FNAME" value=""> <!-- Añadimos form-control -->
+                                                </div>
+
+
+
+                                                <!-- Campo Mensaje (Mailchimp no lo incluye por defecto, tendrías que añadirlo a tu lista en MC y agregarlo aquí) -->
+                                                <!-- Si no añades campo de mensaje en Mailchimp, puedes dejarlo como un textarea normal si quieres
+                                                     recibir el mensaje por otra vía o simplemente lo omites.
+                                                     Si SÍ lo añades a tu lista de MC, debes seguir su convención de nombre/id (ej. MMERGE3)
+                                                -->
+                                                <!-- EJEMPLO si añades un campo "Mensaje" (TEXT) en Mailchimp como MMERGE3 -->
+                                                <div class="mc-field-group">
+                                                    <label for="mce-MMERGE3" class="form-label">Mensaje </label>
+                                                    <textarea name="MMERGE3" class="form-control" id="mce-MMERGE3"
+                                                        rows="4"></textarea>
+                                                </div>
+
+
+                                            </div> <!-- /mc_embed_signup_scroll -->
+
+                                            <div id="mce-responses" class="clear foot">
+                                                <div class="response" id="mce-error-response" style="display: none;">
+                                                </div>
+                                                <div class="response" id="mce-success-response" style="display: none;">
+                                                </div>
+                                            </div>
+
+                                            <!-- Hidden field para bot prevention - NO REMOVER -->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                <input type="text" name="b_52cbc18c38999aa2889c9dce2_5488e895b1"
+                                                    tabindex="-1" value="">
+                                            </div>
+
+                                            <div class="optionalParent">
+                                                <div class="clear foot">
+                                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                        class="btn btn-cta-hero mt-3">Enviar Mensaje</button>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="col-12 col-md-6 contact-direct-col p-4 p-md-5 d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="contact-direct-title text-center mb-3">
+                                    o <span class="highlight">contáctanos</span> directamente
+                                </h3>
+                                <p class="contact-email"><a href="mailto:dreamteam@org.com">dreamteam@org.com</a></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Text -->
+            <!-- ... (este div queda igual) ... -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h3 class="contact-bottom-text">¿LISTO PARA SER PARTE DEL DREAM TEAM?</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Fin Contact Section -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-4"> <!-- py-4 adds padding top and bottom -->
+            <div class="row align-items-center">
+
+                <!-- Logo Column -->
+                <div class="col-12 col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
+                    <img src="img/Mesa de trabajo 1.png" alt="Dream Team Logo Footer" class="footer-logo">
+                </div>
+
+                <!-- Info & Copyright Column -->
+                <div class="col-12 col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                    <p class="footer-info">Calle Innovación 123, Oficina 45, Ciudad Creativa</p>
+                    <p class="footer-info">Teléfono: +504 5555-1234</p> <!-- Replace with actual phone -->
+                    <p class="footer-copyright">&copy; 2025 Dream Team Digital. Todos los derechos reservados</p>
+                    <!-- Adjust year if needed -->
+                </div>
+
+                <!-- Social Icons Column -->
+                <div class="col-12 col-lg-3 text-center text-lg-end">
+                    <a href="https://x.com" target="_blank" class="social-icon-link"
+                        aria-label="Visitar perfil de X/Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon-link"
+                        aria-label="Visitar perfil de Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="social-icon-link"
+                        aria-label="Visitar perfil de Facebook"><i class="bi bi-facebook"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap Bundle JS (Debe ir primero) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery (NECESARIO PARA EL SCRIPT DE MAILCHIMP) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Script de validación de Mailchimp (DEBE IR DESPUÉS DE jQuery) -->
+    <!-- CORREGIR la URL para usar HTTPS -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script
+        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; fnames[6] = 'COMPANY'; ftypes[6] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <!-- FIN Script de validación de Mailchimp -->
+
+
+    <!-- Custom JavaScript for Navbar Scroll (Debe ir al final) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.querySelector('.navbar');
+            const scrollThreshold = 50;
+
+            function handleScroll() {
+                if (window.scrollY > scrollThreshold) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            }
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Run on load in case the page is already scrolled
+        });
+    </script>
+
+</body>
+
+</html>
